@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="crayon_1-1.ttf">
+            <string>Nagurigaki-Crayon</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BigAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玩玩看" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg7-o8-ggx">
+                                <rect key="frame" x="190.5" y="179" width="198.5" height="90"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天時" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOs-ct-A5S">
+                                <rect key="frame" x="20.5" y="134.5" width="124.5" height="89.5"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地利" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rG-XD-GMh">
+                                <rect key="frame" x="114" y="269" width="124" height="89.5"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVy-TS-tvz" customClass="GIDSignInButton">
+                                <rect key="frame" x="124" y="421" width="166" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.65836831200000001" blue="0.30573791230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85784000159999996" green="0.99461275339999999" blue="0.7254359722" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="aVy-TS-tvz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2tS-IS-uw2"/>
+                            <constraint firstItem="1rG-XD-GMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.85" id="5Tf-ug-nfx"/>
+                            <constraint firstItem="1rG-XD-GMh" firstAttribute="height" secondItem="bOs-ct-A5S" secondAttribute="height" id="9hW-pR-yDo"/>
+                            <constraint firstItem="bOs-ct-A5S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.4" id="DKd-4U-5qP"/>
+                            <constraint firstItem="1rG-XD-GMh" firstAttribute="width" secondItem="bOs-ct-A5S" secondAttribute="width" id="E3k-FP-sMz"/>
+                            <constraint firstItem="aVy-TS-tvz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="HGn-Jq-7P4"/>
+                            <constraint firstItem="Kg7-o8-ggx" firstAttribute="height" secondItem="bOs-ct-A5S" secondAttribute="height" id="KQJ-Bw-yk8"/>
+                            <constraint firstItem="Kg7-o8-ggx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.4" id="LK2-su-lgj"/>
+                            <constraint firstItem="1rG-XD-GMh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="O8c-9N-k8T"/>
+                            <constraint firstItem="Kg7-o8-ggx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="TSC-ny-S3B"/>
+                            <constraint firstItem="aVy-TS-tvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U8j-NY-KKi"/>
+                            <constraint firstItem="Kg7-o8-ggx" firstAttribute="width" secondItem="bOs-ct-A5S" secondAttribute="width" multiplier="1.6" id="Was-nO-oEg"/>
+                            <constraint firstItem="bOs-ct-A5S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.4" id="Wjz-ga-nQd"/>
+                            <constraint firstItem="bOs-ct-A5S" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="axh-fp-1zu"/>
+                            <constraint firstItem="aVy-TS-tvz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="iKS-4c-J7m"/>
+                            <constraint firstItem="bOs-ct-A5S" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="j1a-JE-H9I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="aVy-TS-tvz" id="g28-JY-sYy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="115"/>
+        </scene>
+        <!--個人資料-->
+        <scene sceneID="sYs-0L-c5R">
+            <objects>
+                <viewController storyboardIdentifier="secVC" id="2js-n4-hlI" customClass="SecViewController" customModule="BigAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fbc-tD-DII">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96370576230000005" green="1" blue="0.84455919509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="dNt-GN-Hd2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="個人資料" id="ryL-Xh-2DO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dlE-y3-z7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="883"/>
+        </scene>
+        <!--挑戰事件-->
+        <scene sceneID="Vel-0m-fUp">
+            <objects>
+                <viewController id="3qL-Hw-8h0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="seI-1A-Xgd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="Zys-Rd-69i"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="挑戰事件" id="jSH-CL-YjZ"/>
+                    <navigationItem key="navigationItem" id="4EJ-Qz-dZK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xG-eH-FOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="883"/>
+        </scene>
+        <!--已完成事件-->
+        <scene sceneID="ikG-Xo-buR">
+            <objects>
+                <viewController id="PJe-4k-utN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JcJ-fP-sMJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.65836831200000001" blue="0.30573791230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="NyG-b3-dBn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="已完成事件" id="d2h-1b-DaQ"/>
+                    <navigationItem key="navigationItem" id="m6m-eY-zoB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WqV-wE-zLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="883"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fqX-uW-eD1">
+            <objects>
+                <tabBarController storyboardIdentifier="tabVC" automaticallyAdjustsScrollViewInsets="NO" id="2uz-Vq-wAv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gCU-FU-zpc">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2js-n4-hlI" kind="relationship" relationship="viewControllers" id="bXS-eR-oi9"/>
+                        <segue destination="3qL-Hw-8h0" kind="relationship" relationship="viewControllers" id="JfH-9g-MSz"/>
+                        <segue destination="PJe-4k-utN" kind="relationship" relationship="viewControllers" id="bX1-4Q-Ilf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CN5-j1-6Me" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="115"/>
+        </scene>
+    </scenes>
+</document>

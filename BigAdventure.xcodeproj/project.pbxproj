@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E6B8B9D542DBCF5C0477CB7 /* Pods_BigAdventure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D50B4344E58ED0BF683927 /* Pods_BigAdventure.framework */; };
+		BFBBF24722BA0DB000DE94ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBF24622BA0DB000DE94ED /* AppDelegate.swift */; };
+		BFBBF24922BA0DB000DE94ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBF24822BA0DB000DE94ED /* ViewController.swift */; };
+		BFBBF24C22BA0DB000DE94ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBF24A22BA0DB000DE94ED /* Main.storyboard */; };
+		BFBBF24E22BA0DB000DE94ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBBF24D22BA0DB000DE94ED /* Assets.xcassets */; };
+		BFBBF25122BA0DB000DE94ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBF24F22BA0DB000DE94ED /* LaunchScreen.storyboard */; };
+		BFBBF25B22BA134900DE94ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFBBF25A22BA134800DE94ED /* GoogleService-Info.plist */; };
+		BFBBF25E22BA28E400DE94ED /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBF25D22BA28E400DE94ED /* SecViewController.swift */; };
+		BFBBF25F22BB2E9B00DE94ED /* crayon_1-1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFBBF25822BA113100DE94ED /* crayon_1-1.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18D50B4344E58ED0BF683927 /* Pods_BigAdventure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigAdventure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4573DDA9C433DA590E970FF7 /* Pods-BigAdventure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigAdventure.release.xcconfig"; path = "Target Support Files/Pods-BigAdventure/Pods-BigAdventure.release.xcconfig"; sourceTree = "<group>"; };
+		680F72C136B92D1F5D36A751 /* Pods-BigAdventure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigAdventure.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigAdventure/Pods-BigAdventure.release.xcconfig"; sourceTree = "<group>"; };
+		86A304CA324D43E1ADCB5B15 /* Pods-BigAdventure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigAdventure.debug.xcconfig"; path = "Target Support Files/Pods-BigAdventure/Pods-BigAdventure.debug.xcconfig"; sourceTree = "<group>"; };
+		BFBBF24322BA0DB000DE94ED /* BigAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBBF24622BA0DB000DE94ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFBBF24822BA0DB000DE94ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFBBF24B22BA0DB000DE94ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFBBF24D22BA0DB000DE94ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFBBF25022BA0DB000DE94ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFBBF25222BA0DB000DE94ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBBF25822BA113100DE94ED /* crayon_1-1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crayon_1-1.ttf"; sourceTree = "<group>"; };
+		BFBBF25A22BA134800DE94ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFBBF25D22BA28E400DE94ED /* SecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
+		EF17D386F1A10703E33FE21F /* Pods-BigAdventure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigAdventure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigAdventure/Pods-BigAdventure.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFBBF24022BA0DB000DE94ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6B8B9D542DBCF5C0477CB7 /* Pods_BigAdventure.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFBBF23A22BA0DAF00DE94ED = {
+			isa = PBXGroup;
+			children = (
+				BFBBF24522BA0DB000DE94ED /* BigAdventure */,
+				BFBBF24422BA0DB000DE94ED /* Products */,
+				F3D18526612000404032CC3D /* Pods */,
+				DD631CCE9EC628F668833C23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFBBF24422BA0DB000DE94ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBF24322BA0DB000DE94ED /* BigAdventure.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFBBF24522BA0DB000DE94ED /* BigAdventure */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBF25A22BA134800DE94ED /* GoogleService-Info.plist */,
+				BFBBF24622BA0DB000DE94ED /* AppDelegate.swift */,
+				BFBBF24822BA0DB000DE94ED /* ViewController.swift */,
+				BFBBF25D22BA28E400DE94ED /* SecViewController.swift */,
+				BFBBF24A22BA0DB000DE94ED /* Main.storyboard */,
+				BFBBF24D22BA0DB000DE94ED /* Assets.xcassets */,
+				BFBBF24F22BA0DB000DE94ED /* LaunchScreen.storyboard */,
+				BFBBF25222BA0DB000DE94ED /* Info.plist */,
+				BFBBF25922BA113600DE94ED /* core */,
+			);
+			path = BigAdventure;
+			sourceTree = "<group>";
+		};
+		BFBBF25922BA113600DE94ED /* core */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBF25822BA113100DE94ED /* crayon_1-1.ttf */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		DD631CCE9EC628F668833C23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18D50B4344E58ED0BF683927 /* Pods_BigAdventure.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3D18526612000404032CC3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86A304CA324D43E1ADCB5B15 /* Pods-BigAdventure.debug.xcconfig */,
+				4573DDA9C433DA590E970FF7 /* Pods-BigAdventure.release.xcconfig */,
+				EF17D386F1A10703E33FE21F /* Pods-BigAdventure.debug.xcconfig */,
+				680F72C136B92D1F5D36A751 /* Pods-BigAdventure.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFBBF24222BA0DB000DE94ED /* BigAdventure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBBF25522BA0DB000DE94ED /* Build configuration list for PBXNativeTarget "BigAdventure" */;
+			buildPhases = (
+				2DCF73ED89B4949EBF2DD160 /* [CP] Check Pods Manifest.lock */,
+				BFBBF23F22BA0DB000DE94ED /* Sources */,
+				BFBBF24022BA0DB000DE94ED /* Frameworks */,
+				BFBBF24122BA0DB000DE94ED /* Resources */,
+				89F51752D9C7E8C5BE572AF6 /* [CP] Embed Pods Frameworks */,
+				7E955C951FB76055522BD719 /* [CP] Copy Pods Resources */,
+				BFBBF25C22BA182B00DE94ED /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigAdventure;
+			productName = BigAdventure;
+			productReference = BFBBF24322BA0DB000DE94ED /* BigAdventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFBBF23B22BA0DAF00DE94ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "洪立德";
+				TargetAttributes = {
+					BFBBF24222BA0DB000DE94ED = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = BFBBF23E22BA0DAF00DE94ED /* Build configuration list for PBXProject "BigAdventure" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFBBF23A22BA0DAF00DE94ED;
+			productRefGroup = BFBBF24422BA0DB000DE94ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFBBF24222BA0DB000DE94ED /* BigAdventure */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFBBF24122BA0DB000DE94ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBBF25F22BB2E9B00DE94ED /* crayon_1-1.ttf in Resources */,
+				BFBBF25122BA0DB000DE94ED /* LaunchScreen.storyboard in Resources */,
+				BFBBF25B22BA134900DE94ED /* GoogleService-Info.plist in Resources */,
+				BFBBF24E22BA0DB000DE94ED /* Assets.xcassets in Resources */,
+				BFBBF24C22BA0DB000DE94ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DCF73ED89B4949EBF2DD160 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigAdventure-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E955C951FB76055522BD719 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BigAdventure/Pods-BigAdventure-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigAdventure/Pods-BigAdventure-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89F51752D9C7E8C5BE572AF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BigAdventure/Pods-BigAdventure-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigAdventure/Pods-BigAdventure-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFBBF25C22BA182B00DE94ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFBBF23F22BA0DB000DE94ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBBF24922BA0DB000DE94ED /* ViewController.swift in Sources */,
+				BFBBF24722BA0DB000DE94ED /* AppDelegate.swift in Sources */,
+				BFBBF25E22BA28E400DE94ED /* SecViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFBBF24A22BA0DB000DE94ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFBBF24B22BA0DB000DE94ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFBBF24F22BA0DB000DE94ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFBBF25022BA0DB000DE94ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFBBF25322BA0DB000DE94ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFBBF25422BA0DB000DE94ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFBBF25622BA0DB000DE94ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF17D386F1A10703E33FE21F /* Pods-BigAdventure.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2TWMWL39TU;
+				INFOPLIST_FILE = BigAdventure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.BigAdventure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.jimmy.BigAdventure";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFBBF25722BA0DB000DE94ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 680F72C136B92D1F5D36A751 /* Pods-BigAdventure.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BigAdventure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.BigAdventure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFBBF23E22BA0DAF00DE94ED /* Build configuration list for PBXProject "BigAdventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBBF25322BA0DB000DE94ED /* Debug */,
+				BFBBF25422BA0DB000DE94ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFBBF25522BA0DB000DE94ED /* Build configuration list for PBXNativeTarget "BigAdventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBBF25622BA0DB000DE94ED /* Debug */,
+				BFBBF25722BA0DB000DE94ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFBBF23B22BA0DAF00DE94ED /* Project object */;
+}

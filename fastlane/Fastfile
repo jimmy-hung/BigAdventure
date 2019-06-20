@@ -1,0 +1,98 @@
+import_from_git(
+  url: "https://github.com/jimmy-hung/fastlane-ios", # The URL of the repository to import the Fastfile from.
+  path: "Fastfile" # The path of the Fastfile in the repository. Defaults to fastlane/Fastfile.
+)
+require 'spaceship'
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+platform :ios do
+
+  lane :run_init do
+    Spaceship::Portal.login(CredentialsManager::AppfileConfig.try_fetch_value(:apple_id), ENV['FASTLANE_PASSWORD'])
+    team_id = Spaceship::Portal.client.team_id
+
+    Dir.chdir("..")
+    xcode_folder = Dir["*.xcodeproj"].first
+
+    project = Xcodeproj::Project.open(xcode_folder)
+    plist_path = project.targets.first.build_configurations.first.build_settings['INFOPLIST_FILE'].gsub('$(SRCROOT)/', '')
+    Dir.chdir("fastlane")
+
+    # 修改display_name
+    update_info_plist(
+      plist_path: plist_path,
+      display_name: ENV['PRODUCE_APP_NAME'].split('-').first
+    )
+
+    app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+    project.targets.each do |target|
+      # 修改編譯設定
+      target.build_configurations.each do |config|
+        config.build_settings['CODE_SIGN_STYLE'] = 'Manual'
+        config.build_settings['DEVELOPMENT_TEAM'] = team_id
+        config.build_settings['PRODUCT_BUNDLE_IDENTIFIER'] = app_identifier
+        config.build_settings['DEVELOPMENT_TEAM'] = team_id
+        config.build_settings["CURRENT_PROJECT_VERSION"] = 1
+        config.build_settings["SWIFT_VERSION"] = '4.2'
+        config.build_settings["TARGETED_DEVICE_FAMILY"] = '1'
+        config.build_settings["IPHONEOS_DEPLOYMENT_TARGET"] = '9.0'
+        if config.name == 'Debug'
+          config.build_settings['CODE_SIGN_IDENTITY'] = 'iPhone Developer'
+          config.build_settings['CODE_SIGN_IDENTITY[sdk=iphoneos*]'] = 'iPhone Developer'
+          config.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = "match Development #{app_identifier}"
+        else
+          config.build_settings['CODE_SIGN_IDENTITY'] = 'iPhone Distribution'
+          config.build_settings['CODE_SIGN_IDENTITY[sdk=iphoneos*]'] = 'iPhone Distribution'
+          config.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = "match AppStore #{app_identifier}"
+        end
+      end
+    end
+    project.save
+
+    # 建立app id
+    produce(language: "Traditional Chinese")
+    # produce(language: "Simplified Chinese", skip_itc: true)
+
+    # 將devices.txt裡面的device id加入itunes
+    register_devices(devices_file: "devices.txt")
+
+    # 產生推播用憑證
+    #pem()
+
+    # 產生三個provisioning file
+    match(
+      type: "development",
+      force: true,
+      keychain_name: "ios-build.keychain",
+      keychain_password: ENV['KEYCHAIN_PASSWORD']
+    )
+    match(
+      type: "adhoc",
+      force: true,
+      keychain_name: "ios-build.keychain",
+      keychain_password: ENV['KEYCHAIN_PASSWORD']
+    )
+    match(
+      type: "appstore",
+      force: true,
+      keychain_name: "ios-build.keychain",
+      keychain_password: ENV['KEYCHAIN_PASSWORD']
+    )
+
+  end
+  #抓取所有provision profile指令
+  lane :matchAll do
+    sh("fastlane match development clone_branch_directly&&fastlane match adhoc clone_branch_directly&&fastlane match appstore clone_branch_directly")
+  end
+end
