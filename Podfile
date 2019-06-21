@@ -17,4 +17,10 @@ pod 'SwiftLint'
 # layout constraint
 pod 'SnapKit'
 
+# local database
+pod 'RealmSwift'
+
+# load image
+pod 'SDWebImage'
+
 end

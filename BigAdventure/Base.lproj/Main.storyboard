@@ -82,19 +82,54 @@
                     <view key="view" contentMode="scaleToFill" id="fbc-tD-DII">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zem-0Z-ivK">
+                                <rect key="frame" x="0.0" y="179" width="414" height="538"/>
+                                <color key="backgroundColor" red="0.96378904581069946" green="0.99762934446334839" blue="0.84310454130172729" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CF9-6t-a7O">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0gb-Qb-MUI">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="2js-n4-hlI" id="EIW-Zl-XeL"/>
+                                    <outlet property="delegate" destination="2js-n4-hlI" id="o5A-Mw-PpE"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="0.96370576230000005" green="1" blue="0.84455919509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zem-0Z-ivK" firstAttribute="centerY" secondItem="fbc-tD-DII" secondAttribute="centerY" id="0no-cP-zrl"/>
+                            <constraint firstItem="zem-0Z-ivK" firstAttribute="width" secondItem="fbc-tD-DII" secondAttribute="width" id="7VI-uT-OFC"/>
+                            <constraint firstItem="zem-0Z-ivK" firstAttribute="height" secondItem="fbc-tD-DII" secondAttribute="height" multiplier="0.6" id="TOT-Y7-Uzu"/>
+                            <constraint firstItem="zem-0Z-ivK" firstAttribute="centerX" secondItem="fbc-tD-DII" secondAttribute="centerX" id="nvj-QA-lkS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dNt-GN-Hd2"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="個人資料" id="ryL-Xh-2DO"/>
+                    <connections>
+                        <outlet property="collectionView" destination="zem-0Z-ivK" id="6ze-im-ccq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dlE-y3-z7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513" y="883"/>
+            <point key="canvasLocation" x="511.59420289855075" y="882.58928571428567"/>
         </scene>
         <!--挑戰事件-->
         <scene sceneID="Vel-0m-fUp">
             <objects>
-                <viewController id="3qL-Hw-8h0" sceneMemberID="viewController">
+                <viewController id="3qL-Hw-8h0" customClass="ChallengeViewController" customModule="BigAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="seI-1A-Xgd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +146,7 @@
         <!--已完成事件-->
         <scene sceneID="ikG-Xo-buR">
             <objects>
-                <viewController id="PJe-4k-utN" sceneMemberID="viewController">
+                <viewController id="PJe-4k-utN" customClass="CompleteViewController" customModule="BigAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JcJ-fP-sMJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,6 +166,7 @@
                 <tabBarController storyboardIdentifier="tabVC" automaticallyAdjustsScrollViewInsets="NO" id="2uz-Vq-wAv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gCU-FU-zpc">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

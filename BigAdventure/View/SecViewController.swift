@@ -10,19 +10,22 @@ import UIKit
 import SnapKit
 
 class SecViewController: UIViewController {
+  @IBOutlet weak var collectionView: UICollectionView!
   var backButton = UIButton()
+  let cellId = "cellId"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      collectionView.register(CollectionCell.self, forCellWithReuseIdentifier: cellId)
+      collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
     }
 
   override func viewWillAppear(_ animated: Bool) {
-    clickBackButton()
+    addBackButton()
   }
 
-  func clickBackButton () {
+  func addBackButton () {
 
     view.addSubview(backButton)
     backButton.backgroundColor = .lightGray
@@ -31,7 +34,8 @@ class SecViewController: UIViewController {
     backButton.snp.makeConstraints { (make) in
       make.width.equalTo(50)
       make.height.equalTo(40)
-      make.center.equalToSuperview()
+      make.centerX.equalTo(UIScreen.main.bounds.maxX / 2)
+      make.centerY.equalTo(UIScreen.main.bounds.maxY * 5 / 6)
     }
 
     backButton.addTarget(self, action: #selector(dismissSecVC), for: .touchUpInside)
