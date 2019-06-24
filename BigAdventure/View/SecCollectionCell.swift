@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class CollectionCell: UICollectionViewCell {
+class SecCollectionCell: UICollectionViewCell {
 
   let label = UILabel()
   let detailLabel = UILabel()

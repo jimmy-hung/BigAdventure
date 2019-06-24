@@ -17,7 +17,7 @@ class SecViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      collectionView.register(CollectionCell.self, forCellWithReuseIdentifier: cellId)
+      collectionView.register(SecCollectionCell.self, forCellWithReuseIdentifier: cellId)
       collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
     }
 

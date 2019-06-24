@@ -27,6 +27,7 @@ PODS:
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.1)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.1)"
   - GTMSessionFetcher/Core (1.2.2)
+  - RandomColorSwift (1.0.0)
   - Realm (3.16.2):
     - Realm/Headers (= 3.16.2)
   - Realm/Headers (3.16.2)
@@ -41,6 +42,7 @@ PODS:
 DEPENDENCIES:
   - Google/SignIn
   - GoogleSignIn
+  - RandomColorSwift
   - RealmSwift
   - SDWebImage
   - SnapKit
@@ -55,6 +57,7 @@ SPEC REPOS:
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMSessionFetcher
+    - RandomColorSwift
     - Realm
     - RealmSwift
     - SDWebImage
@@ -69,12 +72,13 @@ SPEC CHECKSUMS:
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  RandomColorSwift: 9f85058b721665d52d239ca166a913e083506444
   Realm: 0e73b4edeb5b6a90da3d83206883b2e34e00eb38
   RealmSwift: a81e650171ef0a5f999df1ed8d39ba8d6fce88a4
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
 
-PODFILE CHECKSUM: 500a4c216d6e8656a8525ec45c7cf461ea70f2fa
+PODFILE CHECKSUM: 3c6f7eed09fb140dd5105f952e6cbc41454d5316
 
 COCOAPODS: 1.7.2

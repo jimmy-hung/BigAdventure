@@ -133,7 +133,107 @@
                     <view key="view" contentMode="scaleToFill" id="seI-1A-Xgd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在那個時候" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-T3-837">
+                                <rect key="frame" x="62" y="336" width="290" height="89.5"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在什摸時候" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giP-ol-Pt5">
+                                <rect key="frame" x="62" y="112" width="290" height="89.5"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在玩什摸東東" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5k-Bn-1F0">
+                                <rect key="frame" x="62" y="537.5" width="290" height="89.5"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCd-7r-wt9">
+                                <rect key="frame" x="248.5" y="246.5" width="82.5" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="命運">
+                                    <color key="titleColor" red="0.99461275339999999" green="0.13642474060000001" blue="0.1368004468" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ouv-xh-8jV">
+                                <rect key="frame" x="83" y="448" width="82.5" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="機會">
+                                    <color key="titleColor" red="1" green="0.64197503389999999" blue="0.13220678690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSk-1D-dAx">
+                                <rect key="frame" x="248.5" y="425.5" width="82.5" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="命運">
+                                    <color key="titleColor" red="0.99461275339999999" green="0.13642474060000001" blue="0.1368004468" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="726-Xe-DMZ">
+                                <rect key="frame" x="83" y="694.5" width="82.5" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="機會">
+                                    <color key="titleColor" red="1" green="0.64197503389999999" blue="0.13220678690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk2-Og-9bI">
+                                <rect key="frame" x="248.5" y="649.5" width="82.5" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="命運">
+                                    <color key="titleColor" red="0.99461275339999999" green="0.13642474060000001" blue="0.1368004468" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgT-Hb-8jO">
+                                <rect key="frame" x="83" y="224" width="82.5" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="機會">
+                                    <color key="titleColor" red="1" green="0.64197503389999999" blue="0.13220678690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KcA-T3-837" firstAttribute="height" secondItem="giP-ol-Pt5" secondAttribute="height" id="2Bo-Jv-hM2"/>
+                            <constraint firstItem="CCd-7r-wt9" firstAttribute="height" secondItem="qgT-Hb-8jO" secondAttribute="height" id="6ho-BM-eB8"/>
+                            <constraint firstItem="Hk2-Og-9bI" firstAttribute="centerX" secondItem="seI-1A-Xgd" secondAttribute="centerX" multiplier="1.4" id="7uE-Qg-D8r"/>
+                            <constraint firstItem="Ouv-xh-8jV" firstAttribute="width" secondItem="qgT-Hb-8jO" secondAttribute="width" id="8uF-8B-a9s"/>
+                            <constraint firstItem="KcA-T3-837" firstAttribute="centerY" secondItem="seI-1A-Xgd" secondAttribute="centerY" multiplier="0.85" id="AzV-q4-FtA"/>
+                            <constraint firstItem="giP-ol-Pt5" firstAttribute="height" secondItem="seI-1A-Xgd" secondAttribute="height" multiplier="0.1" id="F8r-La-Uuo"/>
+                            <constraint firstItem="KcA-T3-837" firstAttribute="width" secondItem="giP-ol-Pt5" secondAttribute="width" id="FEC-G0-3v5"/>
+                            <constraint firstItem="726-Xe-DMZ" firstAttribute="width" secondItem="qgT-Hb-8jO" secondAttribute="width" id="Fdj-Yb-ori"/>
+                            <constraint firstItem="CCd-7r-wt9" firstAttribute="centerX" secondItem="seI-1A-Xgd" secondAttribute="centerX" multiplier="1.4" id="Kck-II-Jvv"/>
+                            <constraint firstItem="KcA-T3-837" firstAttribute="centerX" secondItem="seI-1A-Xgd" secondAttribute="centerX" id="MLk-cP-HmA"/>
+                            <constraint firstItem="h5k-Bn-1F0" firstAttribute="height" secondItem="KcA-T3-837" secondAttribute="height" id="QFb-tD-WcG"/>
+                            <constraint firstItem="Hk2-Og-9bI" firstAttribute="width" secondItem="qgT-Hb-8jO" secondAttribute="width" id="Qtw-re-0ji"/>
+                            <constraint firstItem="giP-ol-Pt5" firstAttribute="centerY" secondItem="seI-1A-Xgd" secondAttribute="centerY" multiplier="0.35" id="YWT-Qc-vfL"/>
+                            <constraint firstItem="Hk2-Og-9bI" firstAttribute="height" secondItem="qgT-Hb-8jO" secondAttribute="height" id="Z5U-nI-U3s"/>
+                            <constraint firstItem="gSk-1D-dAx" firstAttribute="centerX" secondItem="seI-1A-Xgd" secondAttribute="centerX" multiplier="1.4" id="apo-PE-1Db"/>
+                            <constraint firstItem="gSk-1D-dAx" firstAttribute="width" secondItem="qgT-Hb-8jO" secondAttribute="width" id="bOC-ym-JAb"/>
+                            <constraint firstItem="CCd-7r-wt9" firstAttribute="width" secondItem="qgT-Hb-8jO" secondAttribute="width" id="cIR-Jf-FDy"/>
+                            <constraint firstItem="h5k-Bn-1F0" firstAttribute="centerX" secondItem="seI-1A-Xgd" secondAttribute="centerX" id="erv-bg-97t"/>
+                            <constraint firstItem="qgT-Hb-8jO" firstAttribute="height" secondItem="seI-1A-Xgd" secondAttribute="height" multiplier="0.05" id="fgf-CZ-3Ot"/>
+                            <constraint firstItem="giP-ol-Pt5" firstAttribute="width" secondItem="seI-1A-Xgd" secondAttribute="width" multiplier="0.7" id="fpc-Ao-du5"/>
+                            <constraint firstItem="726-Xe-DMZ" firstAttribute="centerY" secondItem="seI-1A-Xgd" secondAttribute="centerY" multiplier="1.6" id="gCZ-RF-OTu"/>
+                            <constraint firstItem="726-Xe-DMZ" firstAttribute="height" secondItem="qgT-Hb-8jO" secondAttribute="height" id="hPE-R6-n9l"/>
+                            <constraint firstItem="Hk2-Og-9bI" firstAttribute="centerY" secondItem="seI-1A-Xgd" secondAttribute="centerY" multiplier="1.5" id="hiO-2y-afI"/>
+                            <constraint firstItem="gSk-1D-dAx" firstAttribute="height" secondItem="qgT-Hb-8jO" secondAttribute="height" id="joO-cj-OMy"/>
+                            <constraint firstItem="qgT-Hb-8jO" firstAttribute="centerY" secondItem="seI-1A-Xgd" secondAttribute="centerY" multiplier="0.55" id="jsn-bs-HcO"/>
+                            <constraint firstItem="h5k-Bn-1F0" firstAttribute="centerY" secondItem="seI-1A-Xgd" secondAttribute="centerY" multiplier="1.3" id="koO-4u-am4"/>
+                            <constraint firstItem="Ouv-xh-8jV" firstAttribute="centerY" secondItem="seI-1A-Xgd" secondAttribute="centerY" multiplier="1.05" id="kwo-J4-77c"/>
+                            <constraint firstItem="qgT-Hb-8jO" firstAttribute="width" secondItem="seI-1A-Xgd" secondAttribute="width" multiplier="0.2" id="o6z-8f-GQd"/>
+                            <constraint firstItem="gSk-1D-dAx" firstAttribute="centerY" secondItem="seI-1A-Xgd" secondAttribute="centerY" id="pG9-Wm-vMJ"/>
+                            <constraint firstItem="Ouv-xh-8jV" firstAttribute="height" secondItem="qgT-Hb-8jO" secondAttribute="height" id="po1-6G-aKs"/>
+                            <constraint firstItem="h5k-Bn-1F0" firstAttribute="width" secondItem="KcA-T3-837" secondAttribute="width" id="tBX-A8-ubu"/>
+                            <constraint firstItem="CCd-7r-wt9" firstAttribute="centerY" secondItem="seI-1A-Xgd" secondAttribute="centerY" multiplier="0.6" id="v33-6j-lsd"/>
+                            <constraint firstItem="726-Xe-DMZ" firstAttribute="centerX" secondItem="seI-1A-Xgd" secondAttribute="centerX" multiplier="0.6" id="vgB-Ge-So6"/>
+                            <constraint firstItem="Ouv-xh-8jV" firstAttribute="centerX" secondItem="seI-1A-Xgd" secondAttribute="centerX" multiplier="0.6" id="wBD-qZ-ciW"/>
+                            <constraint firstItem="qgT-Hb-8jO" firstAttribute="centerX" secondItem="seI-1A-Xgd" secondAttribute="centerX" multiplier="0.6" id="wh6-mQ-Ast"/>
+                            <constraint firstItem="giP-ol-Pt5" firstAttribute="centerX" secondItem="seI-1A-Xgd" secondAttribute="centerX" id="y5M-fu-xVa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zys-Rd-69i"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="挑戰事件" id="jSH-CL-YjZ"/>
@@ -141,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xG-eH-FOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="883"/>
+            <point key="canvasLocation" x="1185.5072463768117" y="882.58928571428567"/>
         </scene>
         <!--已完成事件-->
         <scene sceneID="ikG-Xo-buR">
@@ -150,11 +250,36 @@
                     <view key="view" contentMode="scaleToFill" id="JcJ-fP-sMJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Yn-7P-U0F">
+                                <rect key="frame" x="52" y="224" width="310.5" height="537.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZMX-Ct-GcK">
+                                        <rect key="frame" x="0.0" y="28" width="310.5" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZMX-Ct-GcK" id="xd2-pK-tkX">
+                                            <rect key="frame" x="0.0" y="0.0" width="310.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.65836831200000001" blue="0.30573791230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8Yn-7P-U0F" firstAttribute="height" secondItem="JcJ-fP-sMJ" secondAttribute="height" multiplier="0.6" id="AIE-sv-Sep"/>
+                            <constraint firstItem="8Yn-7P-U0F" firstAttribute="width" secondItem="JcJ-fP-sMJ" secondAttribute="width" multiplier="0.75" id="Yas-uE-mUx"/>
+                            <constraint firstItem="8Yn-7P-U0F" firstAttribute="centerY" secondItem="JcJ-fP-sMJ" secondAttribute="centerY" multiplier="1.1" id="ZmO-Wt-srI"/>
+                            <constraint firstItem="8Yn-7P-U0F" firstAttribute="centerX" secondItem="JcJ-fP-sMJ" secondAttribute="centerX" id="lm2-Sp-DnW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NyG-b3-dBn"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="已完成事件" id="d2h-1b-DaQ"/>
                     <navigationItem key="navigationItem" id="m6m-eY-zoB"/>
+                    <connections>
+                        <outlet property="tableView" destination="8Yn-7P-U0F" id="jB4-n4-FqN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WqV-wE-zLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

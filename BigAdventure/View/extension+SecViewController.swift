@@ -31,7 +31,7 @@ extension SecViewController: UICollectionViewDelegate, UICollectionViewDataSourc
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
 
-    guard let collectionCell = cell as? CollectionCell
+    guard let collectionCell = cell as? SecCollectionCell
     else { return cell }
 
     if indexPath.section == 0 {
