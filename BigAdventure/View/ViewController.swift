@@ -95,6 +95,13 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
     isLogin = false
   }
 
+  func settingData () {
+
+    LoadingChallenge.getChallengeWhat()
+    LoadingChallenge.getChallengeWhen()
+    LoadingChallenge.getChallengeWhere()
+  }
+
   // login 成功後觸發
   func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
     if error != nil {
@@ -112,6 +119,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
       isLogin = true
       DispatchQueue.main.async {
         self.loginButton.isHidden = true
+        self.settingData()
       }
     }
   }

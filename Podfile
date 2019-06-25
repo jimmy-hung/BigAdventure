@@ -23,6 +23,4 @@ pod 'RealmSwift'
 # load image
 pod 'SDWebImage'
 
-pod 'RandomColorSwift'
-
 end

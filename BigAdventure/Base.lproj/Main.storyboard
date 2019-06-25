@@ -134,7 +134,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在那個時候" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-T3-837">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在那個地方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-T3-837">
                                 <rect key="frame" x="62" y="336" width="290" height="89.5"/>
                                 <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="35"/>
                                 <nil key="textColor"/>
@@ -152,47 +152,65 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCd-7r-wt9">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCd-7r-wt9">
                                 <rect key="frame" x="248.5" y="246.5" width="82.5" height="44.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="命運">
-                                    <color key="titleColor" red="0.99461275339999999" green="0.13642474060000001" blue="0.1368004468" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenButton:" destination="3qL-Hw-8h0" eventType="touchUpInside" id="Ujl-bj-98U"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ouv-xh-8jV">
                                 <rect key="frame" x="83" y="448" width="82.5" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="機會">
-                                    <color key="titleColor" red="1" green="0.64197503389999999" blue="0.13220678690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="whereButton:" destination="3qL-Hw-8h0" eventType="touchUpInside" id="AWw-6w-a6v"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSk-1D-dAx">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSk-1D-dAx">
                                 <rect key="frame" x="248.5" y="425.5" width="82.5" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="命運">
-                                    <color key="titleColor" red="0.99461275339999999" green="0.13642474060000001" blue="0.1368004468" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="whereButton:" destination="3qL-Hw-8h0" eventType="touchUpInside" id="SNt-bj-P66"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="726-Xe-DMZ">
                                 <rect key="frame" x="83" y="694.5" width="82.5" height="44.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="機會">
-                                    <color key="titleColor" red="1" green="0.64197503389999999" blue="0.13220678690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="whatButton:" destination="3qL-Hw-8h0" eventType="touchUpInside" id="Lbs-sw-CPJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk2-Og-9bI">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk2-Og-9bI">
                                 <rect key="frame" x="248.5" y="649.5" width="82.5" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="命運">
-                                    <color key="titleColor" red="0.99461275339999999" green="0.13642474060000001" blue="0.1368004468" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="whatButton:" destination="3qL-Hw-8h0" eventType="touchUpInside" id="iyk-ko-RJg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgT-Hb-8jO">
                                 <rect key="frame" x="83" y="224" width="82.5" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="機會">
-                                    <color key="titleColor" red="1" green="0.64197503389999999" blue="0.13220678690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="whenButton:" destination="3qL-Hw-8h0" eventType="touchUpInside" id="iHA-XR-mwL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -238,6 +256,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="挑戰事件" id="jSH-CL-YjZ"/>
                     <navigationItem key="navigationItem" id="4EJ-Qz-dZK"/>
+                    <connections>
+                        <outletCollection property="whenTime" destination="qgT-Hb-8jO" collectionClass="NSMutableArray" id="xZt-o1-IKw"/>
+                        <outletCollection property="whenTime" destination="CCd-7r-wt9" collectionClass="NSMutableArray" id="Eeb-ae-O39"/>
+                        <outletCollection property="wherePlace" destination="Ouv-xh-8jV" collectionClass="NSMutableArray" id="Hjq-sJ-oEm"/>
+                        <outletCollection property="wherePlace" destination="gSk-1D-dAx" collectionClass="NSMutableArray" id="uj1-7b-b67"/>
+                        <outletCollection property="whatPlay" destination="726-Xe-DMZ" collectionClass="NSMutableArray" id="BRT-jR-6Vi"/>
+                        <outletCollection property="whatPlay" destination="Hk2-Og-9bI" collectionClass="NSMutableArray" id="aQg-Mb-V8o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xG-eH-FOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,16 +280,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Yn-7P-U0F">
                                 <rect key="frame" x="52" y="224" width="310.5" height="537.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZMX-Ct-GcK">
-                                        <rect key="frame" x="0.0" y="28" width="310.5" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZMX-Ct-GcK" id="xd2-pK-tkX">
-                                            <rect key="frame" x="0.0" y="0.0" width="310.5" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.65836831200000001" blue="0.30573791230000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -18,6 +18,10 @@
 		BF07CEE522C0CBB000E1B24E /* where.json in Resources */ = {isa = PBXBuildFile; fileRef = BF07CEE222C0CBB000E1B24E /* where.json */; };
 		BF07CEE622C0CBB000E1B24E /* what.json in Resources */ = {isa = PBXBuildFile; fileRef = BF07CEE322C0CBB000E1B24E /* what.json */; };
 		BF07CEE822C0CCAC00E1B24E /* Adventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF07CEE722C0CCAC00E1B24E /* Adventure.swift */; };
+		BF07CEEA22C0D63100E1B24E /* ColorCollect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF07CEE922C0D63100E1B24E /* ColorCollect.swift */; };
+		BF07CEEC22C0DA7B00E1B24E /* extension+RandomInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF07CEEB22C0DA7B00E1B24E /* extension+RandomInt.swift */; };
+		BF07CEEE22C1C4D700E1B24E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF07CEED22C1C4D700E1B24E /* ViewModel.swift */; };
+		BF07CEF022C1C7DF00E1B24E /* LoadingChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF07CEEF22C1C7DF00E1B24E /* LoadingChallenge.swift */; };
 		BFBBF24722BA0DB000DE94ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBF24622BA0DB000DE94ED /* AppDelegate.swift */; };
 		BFBBF24922BA0DB000DE94ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBF24822BA0DB000DE94ED /* ViewController.swift */; };
 		BFBBF24C22BA0DB000DE94ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBF24A22BA0DB000DE94ED /* Main.storyboard */; };
@@ -44,6 +48,10 @@
 		BF07CEE222C0CBB000E1B24E /* where.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = where.json; sourceTree = "<group>"; };
 		BF07CEE322C0CBB000E1B24E /* what.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = what.json; sourceTree = "<group>"; };
 		BF07CEE722C0CCAC00E1B24E /* Adventure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adventure.swift; sourceTree = "<group>"; };
+		BF07CEE922C0D63100E1B24E /* ColorCollect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollect.swift; sourceTree = "<group>"; };
+		BF07CEEB22C0DA7B00E1B24E /* extension+RandomInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+RandomInt.swift"; sourceTree = "<group>"; };
+		BF07CEED22C1C4D700E1B24E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BF07CEEF22C1C7DF00E1B24E /* LoadingChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingChallenge.swift; sourceTree = "<group>"; };
 		BFBBF24322BA0DB000DE94ED /* BigAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBF24622BA0DB000DE94ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFBBF24822BA0DB000DE94ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +114,8 @@
 				BFBBF26022BB3BBE00DE94ED /* RealmObject.swift */,
 				BF07CEC322BB6BE300E1B24E /* UserInfo.swift */,
 				BF07CEE722C0CCAC00E1B24E /* Adventure.swift */,
+				BF07CEE922C0D63100E1B24E /* ColorCollect.swift */,
+				BF07CEEF22C1C7DF00E1B24E /* LoadingChallenge.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				BF07CEC122BB690F00E1B24E /* RealmAction.swift */,
+				BF07CEED22C1C4D700E1B24E /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -157,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				BF07CEC522BB705500E1B24E /* extension+UIColot.swift */,
+				BF07CEEB22C0DA7B00E1B24E /* extension+RandomInt.swift */,
 				BFBBF25822BA113100DE94ED /* crayon_1-1.ttf */,
 				BF07CEE322C0CBB000E1B24E /* what.json */,
 				BF07CEE122C0CBB000E1B24E /* when.json */,
@@ -325,12 +337,16 @@
 				BFBBF24922BA0DB000DE94ED /* ViewController.swift in Sources */,
 				BF07CECA22BB79E500E1B24E /* extension+SecViewController.swift in Sources */,
 				BFBBF24722BA0DB000DE94ED /* AppDelegate.swift in Sources */,
+				BF07CEEC22C0DA7B00E1B24E /* extension+RandomInt.swift in Sources */,
 				BF07CEE822C0CCAC00E1B24E /* Adventure.swift in Sources */,
 				BF07CECE22BCB6EB00E1B24E /* CompleteViewController.swift in Sources */,
 				BF07CEC822BB732100E1B24E /* SecCollectionCell.swift in Sources */,
 				BF07CEC222BB690F00E1B24E /* RealmAction.swift in Sources */,
+				BF07CEEA22C0D63100E1B24E /* ColorCollect.swift in Sources */,
+				BF07CEEE22C1C4D700E1B24E /* ViewModel.swift in Sources */,
 				BF07CECC22BCB6D900E1B24E /* ChallengeViewController.swift in Sources */,
 				BF07CEC622BB705500E1B24E /* extension+UIColot.swift in Sources */,
+				BF07CEF022C1C7DF00E1B24E /* LoadingChallenge.swift in Sources */,
 				BF07CEC422BB6BE300E1B24E /* UserInfo.swift in Sources */,
 				BFBBF25E22BA28E400DE94ED /* SecViewController.swift in Sources */,
 			);
