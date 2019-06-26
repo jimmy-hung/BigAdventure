@@ -12,18 +12,17 @@ class ViewModel: NSObject {
 
     func getWhen () -> String {
 
-        
-        return ""
+        return "\(LoadingChallenge.whenList![(LoadingChallenge.whenList?.count.arc4random)!].when)"
     }
 
     func getWhere () -> String {
 
-        return ""
+        return "\(LoadingChallenge.whereList![(LoadingChallenge.whereList?.count.arc4random)!].atWhere)"
     }
 
     func getWhat () -> String {
 
-        return ""
+        return "\(LoadingChallenge.whatList![(LoadingChallenge.whatList?.count.arc4random)!].doWhat)"
     }
 
 }

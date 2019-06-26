@@ -11,6 +11,11 @@ import UIKit
 
 struct ColorCollect {
 
-    static var collectColor: [UIColor] = [.red, .blue, .skyBlue, .veryLightGray, .green, .purple, .yellow, .pink, .sandBrown]
+    static var collectColor: [UIColor] = [.red, .blue,
+                                          .skyBlue, .veryLightGray,
+                                          .green, .purple, .yellow,
+                                          .pink, .sandBrown,
+                                          .cyan, .darkBlue,
+                                          .groupTableViewBackground, .magenta]
     static var countColor: Int = ColorCollect.collectColor.count
 }

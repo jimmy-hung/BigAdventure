@@ -22,6 +22,7 @@
 		BF07CEEC22C0DA7B00E1B24E /* extension+RandomInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF07CEEB22C0DA7B00E1B24E /* extension+RandomInt.swift */; };
 		BF07CEEE22C1C4D700E1B24E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF07CEED22C1C4D700E1B24E /* ViewModel.swift */; };
 		BF07CEF022C1C7DF00E1B24E /* LoadingChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF07CEEF22C1C7DF00E1B24E /* LoadingChallenge.swift */; };
+		BF458EC422C37D0600767F47 /* BigAdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF458EC322C37D0600767F47 /* BigAdventureTests.swift */; };
 		BFBBF24722BA0DB000DE94ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBF24622BA0DB000DE94ED /* AppDelegate.swift */; };
 		BFBBF24922BA0DB000DE94ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBF24822BA0DB000DE94ED /* ViewController.swift */; };
 		BFBBF24C22BA0DB000DE94ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBF24A22BA0DB000DE94ED /* Main.storyboard */; };
@@ -33,6 +34,16 @@
 		BFBBF26122BB3BBE00DE94ED /* RealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBF26022BB3BBE00DE94ED /* RealmObject.swift */; };
 		D189763170B367841918BD15 /* Pods_BigAdventure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAAE8CFB46AEC2C48CF5CAF /* Pods_BigAdventure.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF458EC622C37D0600767F47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFBBF23B22BA0DAF00DE94ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFBBF24222BA0DB000DE94ED;
+			remoteInfo = BigAdventure;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7CB49D45A12ED58403FC0FCA /* Pods-BigAdventure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigAdventure.release.xcconfig"; path = "Target Support Files/Pods-BigAdventure/Pods-BigAdventure.release.xcconfig"; sourceTree = "<group>"; };
@@ -52,6 +63,9 @@
 		BF07CEEB22C0DA7B00E1B24E /* extension+RandomInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+RandomInt.swift"; sourceTree = "<group>"; };
 		BF07CEED22C1C4D700E1B24E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		BF07CEEF22C1C7DF00E1B24E /* LoadingChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingChallenge.swift; sourceTree = "<group>"; };
+		BF458EC122C37D0600767F47 /* BigAdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigAdventureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF458EC322C37D0600767F47 /* BigAdventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigAdventureTests.swift; sourceTree = "<group>"; };
+		BF458EC522C37D0600767F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFBBF24322BA0DB000DE94ED /* BigAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBF24622BA0DB000DE94ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFBBF24822BA0DB000DE94ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +81,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BF458EBE22C37D0600767F47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFBBF24022BA0DB000DE94ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,10 +150,20 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		BF458EC222C37D0600767F47 /* BigAdventureTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF458EC322C37D0600767F47 /* BigAdventureTests.swift */,
+				BF458EC522C37D0600767F47 /* Info.plist */,
+			);
+			path = BigAdventureTests;
+			sourceTree = "<group>";
+		};
 		BFBBF23A22BA0DAF00DE94ED = {
 			isa = PBXGroup;
 			children = (
 				BFBBF24522BA0DB000DE94ED /* BigAdventure */,
+				BF458EC222C37D0600767F47 /* BigAdventureTests */,
 				BFBBF24422BA0DB000DE94ED /* Products */,
 				A6C94CB0DA47BE0855F95CEC /* Pods */,
 				04E955FEDCAE147E330114B4 /* Frameworks */,
@@ -143,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				BFBBF24322BA0DB000DE94ED /* BigAdventure.app */,
+				BF458EC122C37D0600767F47 /* BigAdventureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +212,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BF458EC022C37D0600767F47 /* BigAdventureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF458ECA22C37D0600767F47 /* Build configuration list for PBXNativeTarget "BigAdventureTests" */;
+			buildPhases = (
+				BF458EBD22C37D0600767F47 /* Sources */,
+				BF458EBE22C37D0600767F47 /* Frameworks */,
+				BF458EBF22C37D0600767F47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF458EC722C37D0600767F47 /* PBXTargetDependency */,
+			);
+			name = BigAdventureTests;
+			productName = BigAdventureTests;
+			productReference = BF458EC122C37D0600767F47 /* BigAdventureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BFBBF24222BA0DB000DE94ED /* BigAdventure */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFBBF25522BA0DB000DE94ED /* Build configuration list for PBXNativeTarget "BigAdventure" */;
@@ -211,6 +261,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "洪立德";
 				TargetAttributes = {
+					BF458EC022C37D0600767F47 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BFBBF24222BA0DB000DE94ED;
+					};
 					BFBBF24222BA0DB000DE94ED = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -230,11 +284,19 @@
 			projectRoot = "";
 			targets = (
 				BFBBF24222BA0DB000DE94ED /* BigAdventure */,
+				BF458EC022C37D0600767F47 /* BigAdventureTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BF458EBF22C37D0600767F47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFBBF24122BA0DB000DE94ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,6 +391,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BF458EBD22C37D0600767F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF458EC422C37D0600767F47 /* BigAdventureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BFBBF23F22BA0DB000DE94ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +424,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BF458EC722C37D0600767F47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFBBF24222BA0DB000DE94ED /* BigAdventure */;
+			targetProxy = BF458EC622C37D0600767F47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		BFBBF24A22BA0DB000DE94ED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -374,6 +452,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BF458EC822C37D0600767F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TWMWL39TU;
+				INFOPLIST_FILE = BigAdventureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.google.BigAdventureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigAdventure.app/BigAdventure";
+			};
+			name = Debug;
+		};
+		BF458EC922C37D0600767F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2TWMWL39TU;
+				INFOPLIST_FILE = BigAdventureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.google.BigAdventureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigAdventure.app/BigAdventure";
+			};
+			name = Release;
+		};
 		BFBBF25322BA0DB000DE94ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -535,6 +653,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF458ECA22C37D0600767F47 /* Build configuration list for PBXNativeTarget "BigAdventureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF458EC822C37D0600767F47 /* Debug */,
+				BF458EC922C37D0600767F47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BFBBF23E22BA0DAF00DE94ED /* Build configuration list for PBXProject "BigAdventure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
